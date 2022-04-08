@@ -14,12 +14,14 @@ public class HelloController {
     public TextField w_height;
     public TextField w_radius;
     public TextField w_grubosc;
+    public TextArea results;
 
 
 
     @FXML
     protected void onHelloButtonClick() {
-
+        String s= w_height.getText();
+        results.appendText(s);
         //count+=1;
         //String s=Integer.toString(count);
         //counter.setText(s);
