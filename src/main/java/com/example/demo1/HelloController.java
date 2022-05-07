@@ -27,7 +27,7 @@ public class HelloController {
     }
     public double shnumber(String numberString){
         int indexOfDecimal = numberString.indexOf('.');
-        double truncatedNumber = Double.parseDouble(numberString.substring(0, indexOfDecimal + 3));
+        double truncatedNumber = Double.parseDouble(numberString.substring(0, indexOfDecimal + 0));
         return truncatedNumber;
     }
 
@@ -76,7 +76,7 @@ public class HelloController {
 
             double pole_b = 2*3.14*wd_radius*wd_height;
             double pole_p = 2*3.14*wd_radius*wd_radius;
-            double pole_c = pole_b * pole_p*2;
+            double pole_c = pole_b + pole_p;
 
 
 
